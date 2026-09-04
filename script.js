@@ -180,7 +180,7 @@ async function handleCommand(text) {
 
         await sendBotMessage(
             CONFIG.ADMIN_CHAT_ID,
-            "🤖 لوحة تحكم FileBox",
+            "🤖 لوحة تحكم RH_FileBox",
             mainKeyboard()
         );
 
@@ -317,7 +317,7 @@ async function handleCallback(query) {
 
         await editBotMessage(
             query.message,
-            "🤖 لوحة تحكم FileBox",
+            "🤖 لوحة تحكم RH_FileBox",
             mainKeyboard()
         );
 
