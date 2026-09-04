@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">📦 <span id="siteName">FileBox</span></div>
+    <div class="status">
+        <span id="statusDot"></span>
+        <span id="statusText">جاري الاتصال...</span>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>📁 الملفات</h1>
+        <p>الملفات المتوفرة للتحميل</p>
+    </section>
+
+    <section class="toolbar">
+        <div class="search">
+            🔎
+            <input id="searchInput" type="search" placeholder="البحث عن ملف...">
+        </div>
+        <button id="refreshBtn">🔄 تحديث</button>
+    </section>
+
+    <div id="notice" class="notice hidden"></div>
+    <div id="loading" class="loading">جاري تحميل الملفات...</div>
+
+    <section id="empty" class="empty hidden">
+        <div class="emptyIcon">📂</div>
+        <h2>لا توجد ملفات</h2>
+        <p>أضف ملفاً من خلال بوت Telegram.</p>
+    </section>
+
+    <section id="filesContainer" class="filesGrid"></section>
+</main>
+
+<footer><span id="footerName">FileBox</span> © 2026</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
